@@ -1,2 +1,1 @@
-# flame
-Nitor Design System - Flame
+# Nitor Design System

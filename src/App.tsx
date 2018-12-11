@@ -1,0 +1,18 @@
+import * as React from 'react';
+import {hot} from 'react-hot-loader';
+import {Home} from "./components/Home";
+
+class App extends React.Component {
+    public render(): React.ReactNode {
+        return (
+            <div className="app">
+                <h1>Flame</h1>
+                <Home />
+            </div>
+        );
+    }
+}
+
+const app: React.ComponentType = hot(module)(App);
+
+export {app as App};
