@@ -1,13 +1,16 @@
 import * as React from 'react';
 import {hot} from 'react-hot-loader';
-import {Home} from "./components/Home";
+import Button from "./components/Button/Button";
 
 class App extends React.Component {
     public render(): React.ReactNode {
         return (
             <div className="app">
                 <h1>Flame</h1>
-                <Home />
+                <Button
+                    text="test button"
+                    onClick={() => console.log('lol internet')}
+                />
             </div>
         );
     }

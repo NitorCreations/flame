@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  background-color: var(--nitor-blue);
+  outline: none;
+  border: none;
+  padding: var(--global-baseline);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  will-change: background-color;
+  transition: background-color var(--hover-transition);
+  > span {
+    color: var(--white);
+    font-size: calc(var(--global-baseline) * 2);
+    user-select: none;
+  }
+  &:hover {
+    background-color: color(var(--nitor-blue) tint(15%));
+  }
+}
