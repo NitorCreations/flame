@@ -1,0 +1,8 @@
+global:
+  type: color
+  category: buttons
+imports:
+  - "./colors.yml"
+props:
+  button_background:
+    value: "{!ELECTRIC_BLUE}"
