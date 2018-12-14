@@ -18,7 +18,8 @@
     "prettier:write": "npm run prettier -- --write",
     "lint": "tslint -c \"tslint.json\" -e \"node_modules/**/*\" --project \"tsconfig.json\" \"./src/**/*.ts*\"",
     "storybook": "NODE_PATH=src start-storybook -p 6006 -c .storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-deploy": "build-storybook; cd storybook-static; surge --domain nitor-flame.surge.sh;"
   },
   "dependencies": {
   },
